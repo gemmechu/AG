@@ -5,129 +5,73 @@
     <body style="text-align: -webkit-center">
         <div style="text-align: -webkit-left;">
 			<ul>
-                <li class="nav"><a href="https://newboxwhodis.eecs.umich.edu/~ghassena/2021/mesh%20denoising/">Week 0</a></li>
+                <li class="nav"><a href="index.html" >Week 0</a></li>
                 <li class="nav"><a href="week1.html" style="background-color: #27cece;">Week 1</a></li>
-                <li class="nav"><a href="week2.html" >Week 2 & 3</a></li>
-                <li class="nav"><a href="week4.html" >Week 4,5 & 6</a></li>
-                <li class="nav"><a href="part7.html" >Part 7</a></li>
-                <li class="nav"><a href="part8.html" >Part 8</a></li>
-                <li class="nav"><a href="part9.html">Part 9</a></li>
             </ul>
 		</div>
-        <h2 >LIX - Week 1</h2>
-
-        <table style="
-        height: 50%;
-        width: 70%;">
-            <tbody><tr>
-            <th>
-                Mesh<br>
-                <span>meshes_bouncing_mesh_0020.obj</span>
-                
-            </th>
-                <td>
-                    <iframe src="data/ground_truth.html" title="Smoothed" style="
-                    height: -webkit-fill-available;
-                    width: 70%;"></iframe>
-                </td>
-            </tr>
-            <tr>
-            <th>
-                Mesh + Noise
-            </th>
-                <td>
-                    <iframe src="data/noisy.html" title="Noisy" style="
-                    height: -webkit-fill-available;
-                    width: 70%;"></iframe>
-                </td>
-            </tr>
-                      
-        </tbody>
         </table>
         <br>
-        <h2 >Laplacian Smoothing</h2>
+        <h2 >White balancing Results with python</h2>
         <br>
-    <table style="
-            height:50%;
-            width: 90%;">
+    <table >
                 <tbody>
                 <tr>
                 <th>
-                    filter_laplacian  
+                    input  
                 </th>
                 <th>
-                    filter_humphrey
+                    output
                 </th>
                 <th>
-                    filter_taubin
+                    output 2
                 </th>
-                </tr>
-
+            
+        
 
                 <tr>
           
                     <td>
-                        <iframe src="data/filter_laplacian.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
+                        <img src="data/week1/dark_redish_doll.jpg" width="500px">
+                    </td>
+            
+                    <td>
+                        <img src="data/week1/dark_redish_doll_corrected.jpg" width="500px">
+                    </td>
+
+                    
+                </tr>
+                <tr>
+          
+                    <td>
+                        <img src="data/week1/redish_1.jpg" width="500px">
+                    </td>
+            
+                    <td>
+                        <img src="data/week1/out_doll_1.jpg" width="500px">
                     </td>
                     <td>
-                        <iframe src="data/filter_humphrey.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
+                        <img src="data/week1/out_doll_2.jpg" width="500px">
+                    </td>
+                    
+                </tr>
+                <tr>
+          
+                    <td>
+                        <img src="data/week1/redish_hat.jpg" width="500px">
+                    </td>
+            
+                    <td>
+                        <img src="data/week1/redish_hat_corrected.jpg" width="500px">
                     </td>
                     <td>
-                        <iframe src="data/filter_taubin.html" title="Smoothed" style="
-                        height: -webkit-fill-available;
-                        width: 70%;"></iframe>
+                        <img src="data/week1/natural_hat_unit8.jpg" width="500px">
                     </td>
+                    
                 </tr>
                
         </tbody>
         </table>
-        <br>
-        <h2 >Point cleanet output</h2>
-        <br>
-        <table style="
-        height:50%;
-        width: 70%;">
-            <tbody>
-            <tr>
-            <th>
-                Original Noisy Pointcloud <br>
-                MSE(smooth, noisy) = 0.1711
-            </th>
-            <th>
-                PointCleanNet prediction <br>
-                MSE(noisy, prediction) = 4.5381e-07 <br>
-                MSE(smooth, prediction) = 0.1711
-            </th>
-            </tr>
-
-
-            <tr>
-      
-                <td>
-                    <iframe src="data/point_original.html" title="Smoothed" style="
-                    height: -webkit-fill-available;
-                    width: 70%;"></iframe>
-                </td>
-                <td>
-                    <iframe src="data/point_cleannet.html" title="Smoothed" style="
-                    height: -webkit-fill-available;
-                    width: 70%;"></iframe>
-                </td>
-            </tr>
-           
-    </tbody>
-    </table>
-        
-    <br>
-        <h3 >References</h3>
-        <br>
-        <a href="https://dl.acm.org/doi/pdf/10.1145/1174429.1174494">https://dl.acm.org/doi/pdf/10.1145/1174429.1174494</a>
-        <a href="https://github.com/MPEGGroup/trimesh/blob/master/trimesh/smoothing.py">https://github.com/MPEGGroup/trimesh/blob/master/trimesh/smoothing.py</a>
-        
+    
        
        
     </body>
